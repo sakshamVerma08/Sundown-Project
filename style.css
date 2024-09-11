@@ -1,8 +1,12 @@
+@font-face {
+  font-family: neue haas;
+  src: url(./NeueHaasDisplayMediu.ttf);
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Gilroy";
+  font-family: neue haas;
 }
 
 html,
@@ -12,10 +16,11 @@ body {
 }
 
 #page1 {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   background-color: #efeae3;
   position: relative;
+  padding: 0 2vw;
 }
 
 nav {
@@ -70,4 +75,99 @@ nav {
 
 #nav-part-2 h4:hover a {
   color: white;
+}
+
+#center {
+  width: 100%;
+  height: 65vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  border-bottom: 1px solid #00000c;
+  padding-bottom: 2.5vw;
+}
+
+#center h1 {
+  font-size: 10vw;
+  line-height: 8vw;
+  text-align: right;
+}
+
+#left {
+  width: 25vw;
+  font-size: 1.8vw;
+  line-height: 2vw;
+  text-align: left;
+}
+
+#page1 video {
+  width: 100%;
+  margin-top: 4vw;
+  border-radius: 20px;
+  position:relative;
+}
+
+#hero-shape {
+  position: absolute;
+  height: 36vw;
+  width: 46vw;
+  right: 0;
+  top: 65vh;
+}
+
+#hero1 {
+  height: 100%;
+  background-color: #ff4500;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  position: absolute;
+  width: 100%;
+  filter: blur(20px);
+}
+
+#hero2 {
+  height: 100%;
+  background: linear-gradient(#ff4500, rgb(255, 68, 0));
+  border-radius: 50%;
+  position: absolute;
+  width: 100%;
+  filter: blur(20px);
+  animation: anime2;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+#hero3 {
+  height: 30vw;
+  background: linear-gradient(#ff4500, #fe3f0a);
+  border-radius: 50%;
+  position: absolute;
+  width: 30vw;
+  filter: blur(25px);
+  animation: anime1;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+@keyframes anime1 {
+  from {
+    transform: translate(55%, -3%);
+  }
+
+  to {
+    transform: translate(0%, 10%);
+  }
+}
+
+@keyframes anime2 {
+  from {
+    transfrom: translate(5%, -5%);
+  }
+
+  to {
+    transform: translate(-20%, 30%);
+  }
 }
