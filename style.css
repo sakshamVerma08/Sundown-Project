@@ -2,6 +2,13 @@
   font-family: neue haas;
   src: url(./NeueHaasDisplayMediu.ttf);
 }
+
+@font-face {
+  font-family: neue haas;
+  src: url(./NeueHaasDisplayLight.ttf);
+  font-weight: 100;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -104,7 +111,7 @@ nav {
   width: 100%;
   margin-top: 4vw;
   border-radius: 20px;
-  position:relative;
+  position: relative;
 }
 
 #hero-shape {
@@ -152,6 +159,129 @@ nav {
   animation-direction: alternate;
   animation-timing-function: linear;
 }
+
+#moving-text {
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+#moving-text::-webkit-scrollbar {
+  display: none;
+}
+.con {
+  white-space: nowrap;
+  display: inline-block;
+  animation: move;
+  animation-duration: 9s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+#page2 {
+  min-height: 100vh;
+  padding: 8vw 0;
+  width: 100%;
+  position: relative;
+}
+
+#moving-text h1 {
+  font-size: 9vw;
+  display: inline-block;
+}
+
+#gola {
+  height: 70px;
+  margin: 1vw 2vw;
+  width: 70px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: #fe3f0a;
+}
+
+#page2-bottom {
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 4.5vw;
+  z-index: 9;
+  position: relative;
+  justify-content: space-between;
+}
+
+#page2-bottom h1 {
+  font-size: 4vw;
+  width: 60%;
+  line-height: 4vw;
+}
+
+#bottom-part-2 {
+  width: 25%;
+}
+
+#bottom-part-2 img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+#bottom-part-2 p {
+  font-weight: 100;
+  margin-top: 2vw;
+  font-size: 1vw;
+}
+
+#page2 #gooye {
+  background: linear-gradient(to top right, #fe3f0a, #f06515);
+  border-radius: 50%;
+  height: 30vw;
+  width: 30vw;
+  filter: blur(20px);
+  position: absolute;
+  top: 58%;
+  left: 25%;
+  animation: gooye;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 4s;
+  animation-direction: alternate;
+}
+
+#page3 {
+  width: 100%;
+  height: 100vh;
+}
+
+.elem {
+  height: 150px;
+  width: 100%;
+  border-top: 1px solid #000;
+  display: flex;
+  align-items: center;
+  padding: 0 2vw;
+  position: relative;
+}
+
+.elem h2 {
+  font-size: 3vw;
+}
+
+.elem .overlay {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  background-color: orange;
+}
+
+@keyframes gooye {
+  from {
+    transform: translate(10%, -10%) skew(0);
+  }
+
+  to {
+    transform: translate(-10%, 10%) skew(-20deg);
+  }
+}
+
 @keyframes anime1 {
   from {
     transform: translate(55%, -3%);
@@ -169,5 +299,15 @@ nav {
 
   to {
     transform: translate(-20%, 30%);
+  }
+}
+
+@keyframes move {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
   }
 }
