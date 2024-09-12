@@ -231,7 +231,7 @@ nav {
 }
 
 #page2 #gooye {
-  background: linear-gradient(to top right, #fe3f0a, #f06515);
+  background: linear-gradient(to top right, #fe3f0a, #f68c1a);
   border-radius: 50%;
   height: 30vw;
   width: 30vw;
@@ -248,30 +248,53 @@ nav {
 
 #page3 {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
+  padding: 4vw 0;
 }
 
 .elem {
   height: 150px;
   width: 100%;
-  border-top: 1px solid #000;
+  border-bottom: 1px solid #939090;
   display: flex;
   align-items: center;
   padding: 0 2vw;
   position: relative;
+  overflow: hidden;
+}
+
+#fixed-image {
+  height: 30vw;
+  width: 24vw;
+  position: fixed;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  z-index: 99;
+  display: none;
+  left: 50%;
+  top: 25%;
 }
 
 .elem h2 {
   font-size: 3vw;
+  z-index: 9;
+  position: relative;
 }
 
 .elem .overlay {
   height: 100%;
   position: absolute;
+  transition: all ease 0.2s;
   width: 100%;
+  left: 0;
+  top: -100%;
   background-color: orange;
 }
 
+.elem:hover .overlay {
+  top: 0;
+}
 @keyframes gooye {
   from {
     transform: translate(10%, -10%) skew(0);
