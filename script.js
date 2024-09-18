@@ -32,7 +32,3 @@ var swiper = new Swiper(".mySwiper", {
     clickable: true,
   },
 });
-
-let page4 = document.querySelector("#page4");
-
-let scroller = document.getElementById("orange-scroller");

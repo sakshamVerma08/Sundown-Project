@@ -440,11 +440,3 @@ nav {
   justify-content: space-between;
 }
 
-#orange-scroller{
-  height: 5vw;
-  width: 5vw;
-  border-radius: 50%;
-  opacity:0;
-  background-color: orangered;
-
-}
