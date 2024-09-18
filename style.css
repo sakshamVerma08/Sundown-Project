@@ -304,8 +304,8 @@ nav {
 #page4 {
   height: 60vh;
   background-color: #efeae3;
-  border-bottom: 1px solid black;
   width: 100%;
+  padding: 2vw;
 }
 
 #page5 {
@@ -425,4 +425,26 @@ nav {
   to {
     transform: translateX(-100%);
   }
+}
+
+.swiper {
+  width: 90%;
+  height: 90%;
+  color: #777676;
+}
+
+.swiper-slide {
+  font-size: 18px;
+  border-left: 1px solid #777676;
+  display: flex;
+  justify-content: space-between;
+}
+
+#orange-scroller{
+  height: 5vw;
+  width: 5vw;
+  border-radius: 50%;
+  opacity:0;
+  background-color: orangered;
+
 }
