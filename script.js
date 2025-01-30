@@ -32,3 +32,12 @@ var swiper = new Swiper(".mySwiper", {
     clickable: true,
   },
 });
+
+/* ******************  DIFFERENT JAVASCRIPT *************/
+
+const menuButton = document.querySelector("#sidebarTrigger");
+const sidebar = document.getElementById("sidebar");
+
+menuButton.addEventListener("onclick", () => {
+  
+});

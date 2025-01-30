@@ -22,6 +22,22 @@ body {
   width: 100%;
 }
 
+#sidebar {
+  height: 100vh;
+  width: 75%;
+  background-color: seagreen;
+  display: none;
+}
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+#sidebarTrigger {
+  width: 9vw;
+  background-color: #efeae3;
+  height: 4vh;
+  border: none;
+}
+
 #page1 {
   min-height: 100vh;
   width: 100%;
@@ -440,3 +456,22 @@ nav {
   justify-content: space-between;
 }
 
+/* MEDIA QUERIES */
+/****************************************
+******************************************/
+
+@media (max-width: 560px) {
+  #nav-part-2 {
+    flex-direction: column;
+  }
+
+  #nav-part-2 h4 {
+    margin: 3.5px;
+  }
+}
+
+@media (max-width: 425px) {
+  #nav-part-2 {
+    display: none;
+  }
+}
