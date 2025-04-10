@@ -44,6 +44,7 @@ body {
 /* MENU BUTTON CSS*/
 #sidebarTrigger {
   width: 9vw;
+  display: none;
   background-color: #efeae3;
   height: 4vh;
   border: none;
@@ -133,6 +134,7 @@ nav {
   line-height: 2vw;
   text-align: left;
 }
+
 
 #page1 video {
   width: 100%;
@@ -304,7 +306,7 @@ nav {
   z-index: 99;
   display: none;
   /* left: 50%; */
-  right:5%;
+  right: 5%;
   top: 25%;
 }
 
@@ -475,13 +477,33 @@ nav {
 /****************************************
 ******************************************/
 
-@media (max-width: 560px) {
+@media (max-width: 600px) {
   #nav-part-2 {
-    flex-direction: column;
+    display: none;
+  }
+
+  #sidebarTrigger {
+    display: block;
   }
 
   #nav-part-2 h4 {
     margin: 3.5px;
+  }
+
+  #center {
+    align-items: center;
+  }
+
+  #right h1 {
+    font-size: 50px;
+    line-height: 50px;
+  }
+  #left {
+    width: auto;
+  }
+  #left h3 {
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 
