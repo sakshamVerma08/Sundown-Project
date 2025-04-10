@@ -303,7 +303,8 @@ nav {
   border-radius: 10px;
   z-index: 99;
   display: none;
-  left: 50%;
+  /* left: 50%; */
+  right:5%;
   top: 25%;
 }
 
@@ -314,13 +315,13 @@ nav {
 }
 
 .elem .overlay {
-  height: 100%;
   position: absolute;
+  height: 100%;
   transition: all ease 0.2s;
   width: 100%;
-  left: 0;
   top: -100%;
-  background-color: orange;
+  right: 0;
+  background-color: crimson;
 }
 
 .elem:hover .overlay {
