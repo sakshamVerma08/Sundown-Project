@@ -230,7 +230,7 @@ nav {
 
 #page2-bottom {
   height: 80vh;
-  background-color: crimson;
+ 
   width: 100%;
   display: flex;
   align-items: center;
@@ -482,6 +482,30 @@ nav {
     display: none;
   }
 
+  #page2-bottom {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: auto;
+    width: 100dvw;
+  }
+
+  #page2-bottom h1 {
+    width: 100dvw;
+    margin-left: 10dvw;
+  }
+  #bottom-part-2 {
+    margin: 10dvw;
+    width: 100%;
+  }
+  #bottom-part-2 img {
+    width: 50%;
+  }
+  #bottom-part-2 p {
+    font-size: medium;
+    width: 60%;
+  }
+
   #gola {
     height: 8dvw;
     width: 8dvw;
@@ -519,7 +543,6 @@ nav {
 
   #page2-bottom {
     flex-direction: column;
-    background-color: lightcoral;
     justify-content: flex-end;
     align-items: center;
     width: 100dvw;
