@@ -230,7 +230,7 @@ nav {
 
 #page2-bottom {
   height: 80vh;
- 
+
   width: 100%;
   display: flex;
   align-items: center;
@@ -482,6 +482,17 @@ nav {
     display: none;
   }
 
+  .elem {
+    height: 100px;
+    width: 100%;
+  }
+
+  #gooye {
+    left: 80%;
+    scale: 2.1;
+    top: 30%;
+  }
+
   #page2-bottom {
     flex-direction: column;
     justify-content: center;
@@ -539,6 +550,11 @@ nav {
 @media (max-width: 425px) {
   #site-logo {
     width: 120px;
+  }
+
+  .elem {
+    height: 80px;
+    width: 100%;
   }
 
   #page2-bottom {
